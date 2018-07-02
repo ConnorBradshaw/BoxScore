@@ -1,0 +1,246 @@
+.page-wrap
+{
+	width: 960px;
+	margin: 0 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+p
+{
+	margin: 0 0;
+}
+body
+{
+	margin: 0 0;
+	padding: 0 0;
+}
+h1
+{
+	padding: 0;
+	margin: 0;
+}
+.top
+{
+	background: white;
+	position: absolute;
+	width: 100%;
+	height: 20%;
+}
+.center
+{
+	background: #DCDCDC;
+	position: absolute;
+	top: 20%;
+	width: 100%;
+	height: 80%;
+}
+.box-score-container
+{
+	position: absolute;
+	left: 20%;
+	width: 60%;
+}
+.box-score-home
+{
+	position: relative;
+	padding: 5px;
+	margin-top: 20px;
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 10px;
+	font-family: sans serif;
+	background: white;
+	text-align: right;
+}
+.box-score-away
+{
+	position: relative;
+	padding: 5px;
+	margin-top: 20px;
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 10px;
+	font-family: sans serif;
+	background: white;
+	text-align: right;
+}
+th
+{
+	text-align: right;
+}
+td,th
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+tr
+{
+	border-top: 1px solid #E8E8E8;
+	border-bottom: 1px solid #E8E8E8;
+
+}
+tr: nth-child(even)
+{
+	background: white;
+}
+.box-header
+{
+	border: none;
+
+	font-size: 40px;
+	text-align: left;
+}
+.r2
+{
+	background: #F0F0F0;
+}
+.r4
+{
+	background: #F0F0F0;
+
+}
+.header-score-container
+{
+	border-top: 1px solid #E8E8E8;
+	border-bottom: 1px solid #E8E8E8;
+	position: absolute;
+	left: 20%;
+	top: 30%;
+	width: 60%;
+}
+.home-team
+{
+	padding-left: 23%;
+	display: inline;
+	position: relative;
+}
+.away-team
+{
+	
+	display: inline;
+	position: relative;
+}
+.score-container
+{
+	position: relative;
+	display: inline;
+	font-size: 40px;
+	margin: 20px;
+}
+.name-container
+{
+	position: relative;
+	display: inline;
+	font-size: 20px;
+
+}
+.team-picture
+{
+	vertical-align: middle;
+	width: 80px;
+	height: 80px;
+}
+.home-logo
+{
+	padding-right: 100px;
+	position: relative;
+}
+.away-logo
+{
+	padding-left: 100px;
+	position: relative;
+}
+.team-name
+{
+	text-align: left;
+	border: none;
+	width: 200px;
+	font-size: 25px;
+}
+.edit-game
+{
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+	position: absolute;
+	right: 0;
+	background: #DCDCDC;
+	border: none;
+	width: 200px;
+	height: 50px;
+}
+.middle
+{
+	position: absolute;
+	left: 20%;
+	top: 10%;
+	width: 60%;
+	height: 80%;
+	align-items: center;
+	min-width: 1080px;
+}
+.choices
+{
+	position: relative;
+	display: block;
+	left: 10%;
+	width: 80%;
+	height: 10%;
+	margin-bottom: 10px;
+	border: none;
+}
+.hidden
+{
+	display: none;
+}
+.title-container
+{
+	position: absolute;
+	left: 30%;
+	width: 40%;
+}
+.title
+{
+	position: relative;
+	font-size: 4vh;
+	left: 35%;
+}
+.name-text
+{
+	position: relative;
+	width: 80%;
+	height: 91%;
+	font-size: 50px;
+}
+.submit-button
+{
+	position: relative;
+	width: 19%;
+	height: 100%;
+	vertical-align: top;
+}
+.main-link
+{
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	line-height: 70px;
+	position: absolute;
+	background: #DCDCDC;
+	font-size: 15px;
+	border: none;
+	width: 80%;
+	height: 10%;
+}
+.bottom
+{
+	position: relative;
+	
+}
+.reset
+{
+	margin-top: 20%;
+}
+

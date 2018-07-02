@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<header>
+	<title>Score Keeper</title>
+</header>
+<head>
+	<link rel="stylesheet" href="main.css">
+	<script src="main.js"></script>
+</head>
+<body onload="refreshEdit()">
+	<div class="page-wrap">
+		<div class="top">
+			<div class="title-container">
+				<span class="title">Box Score Editor</span>
+			</div>
+		</div>
+		<div class="middle">
+
+		<button type="button" onclick="editNames('editPlayer')" id="edit-names" class="edit-names choices">Edit Names</button>
+		<button type="button" onclick = "editNames('editTeam')" id="edit-team-name" class="edit-team-name choices">Edit Team Names</button>
+		<button type="button" onclick = "editNames('score')" id="keep-score" class="keep-score choices">Keep Score</button>
+		<button type="button" onclick="editHomePlayer()" id="home" class="home choices hidden">Home Team</button>
+		<button type="button" onclick="editAwayPlayer()" id="away" class="away choices hidden">Away Team</button>
+		<button type="button" onclick="editHomePlayer1()" id="home-player-1" class="home-player-1 choices hidden">Player 1</button>
+		<button type="button" onclick="editHomePlayer2()" id="home-player-2" class="home-player-2 choices hidden">Player 2</button>
+		<button type="button" onclick="editHomePlayer3()" id="home-player-3" class="home-player-3 choices hidden">Player 3</button>
+		<button type="button" onclick="editHomePlayer4()" id="home-player-4" class="home-player-4 choices hidden">Player 4</button>
+		<button type="button" onclick="editHomePlayer5()" id="home-player-5" class="home-player-5 choices hidden">Player 5</button>
+		<button type="button" onclick="editAwayPlayer1()" id="away-player-1" class="away-player-1 choices hidden">Player 1</button>
+		<button type="button" onclick="editAwayPlayer2()" id="away-player-2" class="away-player-2 choices hidden">Player 2</button>
+		<button type="button" onclick="editAwayPlayer3()" id="away-player-3" class="away-player-3 choices hidden">Player 3</button>
+		<button type="button" onclick="editAwayPlayer4()" id="away-player-4" class="away-player-4 choices hidden">Player 4</button>
+		<button type="button" onclick="editAwayPlayer5()" id="away-player-5" class="away-player-5 choices hidden">Player 5</button>
+		<button type="button" onclick="score('fg-made')" id="fg-made" class="fg-made choices hidden">FG Made</button>
+		<button type="button" onclick="score('3pt-made')" id="3pt-made" class="3pt-made choices hidden">3PT Made</button>
+		<button type="button" onclick="score('ft-made')" id="ft-made" class="ft-made choices hidden">FT Made</button>
+		<button type="button" onclick="score('fg-missed')" id="fg-missed" class="fg-missed choices hidden">FG Missed</button>
+		<button type="button" onclick="score('3pt-missed')" id="3pt-missed" class="3pt-missed choices hidden">3PT Missed</button>
+		<button type="button" onclick="score('ft-missed')" id="ft-missed" class="ft-missed choices hidden">FT Missed</button>
+		<button type="button" onclick="score('reb')" id="reb" class="reb choices hidden">REB</button>
+		<button type="button" onclick="score('ast')" id="ast" class="ast choices hidden">AST</button>
+		<button type="button" onclick="score('stl')" id="stl" class="stl choices hidden">STL</button>
+		<button type="button" onclick="score('to')" id="to" class="to choices hidden">TO</button>
+		
+		<div id="name-submittal" class="name-submittal choices hidden">
+			<input id = "name-text" class="name-text" type="text" />
+			<button onclick = "submit()" type="submit" id="submit" class="submit-button">Submit</button>
+		</div>
+		<button onclick = "resetBox()" type="button"  id ="reset" class="reset choices">Reset Box Score</button>
+		<button type="button" onclick="back()" class="back choices">Back</button>
+		<a href="main.html" class="main-link choices">Back to Box Score</a>
+	</div>
+	</div>
