@@ -158,6 +158,16 @@ tr: nth-child(even)
 	width: 200px;
 	font-size: 25px;
 }
+.inline
+{
+	position: relative;
+	display: block-inline;
+	left: 10%;
+	width: 39.8%;
+	height: 10%;
+	margin-bottom: 10px;
+	border: none;
+}
 .edit-game
 {
 	color: black;
@@ -241,6 +251,14 @@ tr: nth-child(even)
 }
 .reset
 {
-	margin-top: 20%;
+	margin-top: 8%;
+}
+.made
+{
+	background:  #00ff00;
+}
+.missed
+{
+	background:  #ff4d4d;
 }
 

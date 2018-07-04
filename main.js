@@ -143,6 +143,7 @@ function resetBox()
 	localStorage.setItem("away", "Away Team");
 	localStorage.setItem("away-box", "Away Team");
 	console.log(localStorage.getItem("home-points"));
+	window.location.href="main.html";
 }
 function editNames(path)
 {
@@ -174,7 +175,7 @@ function editAwayPlayer1()
 	if(intention.path == "editPlayer")
 	{
 		document.getElementById("name-submittal").classList.remove("hidden");
-		intention.player = "1";
+		localStorage.setItem("player", "1");
 	}
 	else if(intention.path == "score")
 	{
@@ -188,7 +189,14 @@ function editAwayPlayer1()
 		document.getElementById("ast").classList.remove("hidden");
 		document.getElementById("stl").classList.remove("hidden");
 		document.getElementById("to").classList.remove("hidden");
-		intention.player = "1";
+		localStorage.setItem("player", "1");
+	}
+	else
+	{
+		console.log("hi");
+		localStorage.setItem("player", "1");
+		localStorage.setItem("team", "away");
+		return true;
 	}
 	menuCollection.lastMenu = menuCollection.currentMenu;
 	if(intention.path == "editPlayer")
@@ -207,7 +215,7 @@ function editAwayPlayer2()
 	if(intention.path == "editPlayer")
 	{
 		document.getElementById("name-submittal").classList.remove("hidden");
-		intention.player = "2";
+		localStorage.setItem("player", "2");
 	}
 	else if(intention.path == "score")
 	{
@@ -221,7 +229,15 @@ function editAwayPlayer2()
 		document.getElementById("ast").classList.remove("hidden");
 		document.getElementById("stl").classList.remove("hidden");
 		document.getElementById("to").classList.remove("hidden");
-		intention.player = "2";
+		localStorage.setItem("player", "2");
+	}
+	else
+	{
+
+		console.log("hi");
+		localStorage.setItem("player", "2");
+		localStorage.setItem("team", "away");
+		return true;
 	}
 	menuCollection.lastMenu = menuCollection.currentMenu;
 	if(intention.path == "editPlayer")
@@ -240,7 +256,7 @@ function editAwayPlayer3()
 	if(intention.path == "editPlayer")
 	{
 		document.getElementById("name-submittal").classList.remove("hidden");
-		intention.player = "3";
+		localStorage.setItem("player", "3");
 	}
 	else if(intention.path == "score")
 	{
@@ -254,7 +270,15 @@ function editAwayPlayer3()
 		document.getElementById("ast").classList.remove("hidden");
 		document.getElementById("stl").classList.remove("hidden");
 		document.getElementById("to").classList.remove("hidden");
-		intention.player = "3";
+		localStorage.setItem("player", "3");
+	}
+	else
+	{
+
+		console.log("hi");
+		localStorage.setItem("player", "3");
+		localStorage.setItem("team", "away");
+		return true;
 	}
 	menuCollection.lastMenu = menuCollection.currentMenu;
 	if(intention.path == "editPlayer")
@@ -273,7 +297,7 @@ function editAwayPlayer4()
 	if(intention.path == "editPlayer")
 	{
 		document.getElementById("name-submittal").classList.remove("hidden");
-		intention.player = "4";
+		localStorage.setItem("player", "4");
 	}
 	else if(intention.path == "score")
 	{
@@ -287,7 +311,15 @@ function editAwayPlayer4()
 		document.getElementById("ast").classList.remove("hidden");
 		document.getElementById("stl").classList.remove("hidden");
 		document.getElementById("to").classList.remove("hidden");
-		intention.player = "4";
+		localStorage.setItem("player", "4");
+	}
+	else
+	{
+
+		console.log("hi");
+		localStorage.setItem("player", "4");
+		localStorage.setItem("team", "away");
+		return true;
 	}
 	menuCollection.lastMenu = menuCollection.currentMenu;
 	if(intention.path == "editPlayer")
@@ -306,7 +338,7 @@ function editAwayPlayer5()
 	if(intention.path == "editPlayer")
 	{
 		document.getElementById("name-submittal").classList.remove("hidden");
-		intention.player = "5";
+		localStorage.setItem("player", "5");
 	}
 	else if(intention.path == "score")
 	{
@@ -320,7 +352,15 @@ function editAwayPlayer5()
 		document.getElementById("ast").classList.remove("hidden");
 		document.getElementById("stl").classList.remove("hidden");
 		document.getElementById("to").classList.remove("hidden");
-		intention.player = "5";
+		localStorage.setItem("player", "5");
+	}
+	else
+	{
+
+		console.log("hi");
+		localStorage.setItem("player", "5");
+		localStorage.setItem("team", "away");
+		return true;
 	}
 	menuCollection.lastMenu = menuCollection.currentMenu;
 	if(intention.path == "editPlayer")
@@ -340,7 +380,7 @@ function editHomePlayer1()
 	{
 		console.log("hi");
 		document.getElementById("name-submittal").classList.remove("hidden");
-		intention.player = "1";
+		localStorage.setItem("player", "1");
 	}
 	else if(intention.path == "score")
 	{
@@ -354,7 +394,15 @@ function editHomePlayer1()
 		document.getElementById("ast").classList.remove("hidden");
 		document.getElementById("stl").classList.remove("hidden");
 		document.getElementById("to").classList.remove("hidden");
-		intention.player = "1";
+		localStorage.setItem("player", "1");
+	}
+	else
+	{
+
+		console.log("hi");
+		localStorage.setItem("player", "1");
+		localStorage.setItem("team", "home");
+		return true;
 	}
 	menuCollection.lastMenu = menuCollection.currentMenu;
 	if(intention.path == "editPlayer")
@@ -373,7 +421,7 @@ function editHomePlayer2()
 	{
 		console.log("hi");
 		document.getElementById("name-submittal").classList.remove("hidden");
-		intention.player = "2";
+		localStorage.setItem("player", "2");
 	}
 	else if(intention.path == "score")
 	{
@@ -387,7 +435,15 @@ function editHomePlayer2()
 		document.getElementById("ast").classList.remove("hidden");
 		document.getElementById("stl").classList.remove("hidden");
 		document.getElementById("to").classList.remove("hidden");
-		intention.player = "2";
+		localStorage.setItem("player", "2");
+	}
+	else
+	{
+
+		console.log("hi");
+		localStorage.setItem("player", "2");
+		localStorage.setItem("team", "home");
+		return true;
 	}
 	menuCollection.lastMenu = menuCollection.currentMenu;
 	if(intention.path == "editPlayer")
@@ -406,7 +462,7 @@ function editHomePlayer3()
 	{
 		console.log("hi");
 		document.getElementById("name-submittal").classList.remove("hidden");
-		intention.player = "3";
+		localStorage.setItem("player", "3");
 	}
 	else if(intention.path == "score")
 	{
@@ -420,7 +476,15 @@ function editHomePlayer3()
 		document.getElementById("ast").classList.remove("hidden");
 		document.getElementById("stl").classList.remove("hidden");
 		document.getElementById("to").classList.remove("hidden");
-		intention.player = "3";
+		localStorage.setItem("player", "3");
+	}
+	else
+	{
+
+		console.log("hi");
+		localStorage.setItem("player", "3");
+		localStorage.setItem("team", "home");
+		return true;
 	}
 	menuCollection.lastMenu = menuCollection.currentMenu;
 	if(intention.path == "editPlayer")
@@ -439,7 +503,7 @@ function editHomePlayer4()
 	{
 		console.log("hi");
 		document.getElementById("name-submittal").classList.remove("hidden");
-		intention.player = "4";
+		localStorage.setItem("player", "4");
 	}
 	else if(intention.path == "score")
 	{
@@ -453,7 +517,15 @@ function editHomePlayer4()
 		document.getElementById("ast").classList.remove("hidden");
 		document.getElementById("stl").classList.remove("hidden");
 		document.getElementById("to").classList.remove("hidden");
-		intention.player = "4";
+		localStorage.setItem("player", "4");
+	}
+	else
+	{
+
+		console.log("hi");
+		localStorage.setItem("player", "4");
+		localStorage.setItem("team", "home");
+		return true;
 	}
 	menuCollection.lastMenu = menuCollection.currentMenu;
 	if(intention.path == "editPlayer")
@@ -472,7 +544,7 @@ function editHomePlayer5()
 	{
 		console.log("hi");
 		document.getElementById("name-submittal").classList.remove("hidden");
-		intention.player = "5";
+		localStorage.setItem("player", "5");
 	}
 	else if(intention.path == "score")
 	{
@@ -486,7 +558,15 @@ function editHomePlayer5()
 		document.getElementById("ast").classList.remove("hidden");
 		document.getElementById("stl").classList.remove("hidden");
 		document.getElementById("to").classList.remove("hidden");
-		intention.player = "5";
+		localStorage.setItem("player", "5");
+	}
+	else
+	{
+
+		console.log("hi");
+		localStorage.setItem("player", "5");
+		localStorage.setItem("team", "home");
+		return true;
 	}
 	menuCollection.lastMenu = menuCollection.currentMenu;
 	if(intention.path == "editPlayer")
@@ -503,12 +583,12 @@ function editHomePlayer()
 	document.getElementById("home-player-3").classList.remove("hidden");
 	document.getElementById("home-player-4").classList.remove("hidden");
 	document.getElementById("home-player-5").classList.remove("hidden");
-	intention.team = "home";
+	localStorage.setItem("team", "home");
 	}
 	else if(intention.path == "editTeam")
 	{
 		document.getElementById("name-submittal").classList.remove("hidden");
-		intention.team = "home";
+		localStorage.setItem("team", "home");
 	}
 	menuCollection.lastMenu = menuCollection.currentMenu;
 	if(intention.path == "editPlayer" || intention.path == "score")
@@ -528,12 +608,12 @@ function editAwayPlayer()
 	document.getElementById("away-player-3").classList.remove("hidden");
 	document.getElementById("away-player-4").classList.remove("hidden");
 	document.getElementById("away-player-5").classList.remove("hidden");
-	intention.team = "away";
+	localStorage.setItem("team", "away");
 	}
 	else if(intention.path == "editTeam")
 	{
 		document.getElementById("name-submittal").classList.remove("hidden");
-		intention.team = "away";
+		localStorage.setItem("team", "away");
 	}
 	menuCollection.lastMenu = menuCollection.currentMenu;
 	if(intention.path == "editPlayer" || intention.path == "score")
@@ -616,10 +696,11 @@ function score(type)
 	if(type == "fg-made")
 	{
 		
-		id = intention.team + "-player-" + intention.player + "-fgpct";
-		idmade = intention.team + "-player-" + intention.player + "-fg-made";
-		idmissed = intention.team + "-player-" + intention.player + "-fg-missed";
-		idtot = intention.team + "-points";
+		id = localStorage.getItem("team") + "-player-" + localStorage.getItem("player") + "-fgpct";
+		idmade = localStorage.getItem("team") + "-player-" + localStorage.getItem("player") + "-fg-made";
+		idmissed = localStorage.getItem("team") + "-player-" + localStorage.getItem("player") + "-fg-missed";
+		idtot = localStorage.getItem("team") + "-points";
+		console.log(id);
 		if(localStorage.getItem(idmade) == null)
 		{
 			console.log(idtot);
@@ -664,10 +745,10 @@ function score(type)
 	}
 	else if(type == "3pt-made")
 	{
-		id = intention.team + "-player-" + intention.player + "-3ptpct";
-		idmade = intention.team + "-player-" + intention.player + "-3pt-made";
-		idmissed = intention.team + "-player-" + intention.player + "-3pt-missed";
-		idtot = intention.team + "-points";
+		id = localStorage.getItem("team") + "-player-" + localStorage.getItem("player") + "-3ptpct";
+		idmade = localStorage.getItem("team") + "-player-" + localStorage.getItem("player") + "-3pt-made";
+		idmissed = localStorage.getItem("team") + "-player-" + localStorage.getItem("player") + "-3pt-missed";
+		idtot = localStorage.getItem("team") + "-points";
 		if(localStorage.getItem(idmade) == null)
 		{
 			localStorage.setItem(idmade, 1);
@@ -713,10 +794,10 @@ function score(type)
 	}
 	else if(type == "ft-made")
 	{
-		id = intention.team + "-player-" + intention.player + "-ftpct";
-		idmade = intention.team + "-player-" + intention.player + "-ft-made";
-		idmissed = intention.team + "-player-" + intention.player + "-ft-missed";
-		idtot = intention.team + "-points";
+		id = localStorage.getItem("team") + "-player-" + localStorage.getItem("player") + "-ftpct";
+		idmade = localStorage.getItem("team") + "-player-" + localStorage.getItem("player") + "-ft-made";
+		idmissed = localStorage.getItem("team") + "-player-" + localStorage.getItem("player") + "-ft-missed";
+		idtot = localStorage.getItem("team") + "-points";
 		if(localStorage.getItem(idmade) == null)
 		{
 			localStorage.setItem(idmade, 1);
@@ -759,9 +840,9 @@ function score(type)
 	}
 	else if(type == "fg-missed")
 	{
-		id = intention.team + "-player-" + intention.player + "-fgpct";
-		idmade = intention.team + "-player-" + intention.player + "-fg-made";
-		idmissed = intention.team + "-player-" + intention.player + "-fg-missed";
+		id = localStorage.getItem("team") + "-player-" + localStorage.getItem("player") + "-fgpct";
+		idmade = localStorage.getItem("team") + "-player-" + localStorage.getItem("player") + "-fg-made";
+		idmissed = localStorage.getItem("team") + "-player-" + localStorage.getItem("player") + "-fg-missed";
 		if(localStorage.getItem(idmissed) == null)
 		{
 			localStorage.setItem(idmissed, 1);
@@ -784,9 +865,9 @@ function score(type)
 	}
 	else if(type == "3pt-missed")
 	{
-		id = intention.team + "-player-" + intention.player + "-3ptpct";
-		idmade = intention.team + "-player-" + intention.player + "-3pt-made";
-		idmissed = intention.team + "-player-" + intention.player + "-3pt-missed";
+		id = localStorage.getItem("team") + "-player-" + localStorage.getItem("player") + "-3ptpct";
+		idmade = localStorage.getItem("team") + "-player-" + localStorage.getItem("player") + "-3pt-made";
+		idmissed = localStorage.getItem("team") + "-player-" + localStorage.getItem("player") + "-3pt-missed";
 		if(localStorage.getItem(idmissed) == null)
 		{
 			localStorage.setItem(idmissed, 1);
@@ -809,9 +890,9 @@ function score(type)
 	}
 	else if(type == "ft-missed")
 	{
-		id = intention.team + "-player-" + intention.player + "-ftpct";
-		idmade = intention.team + "-player-" + intention.player + "-ft-made";
-		idmissed = intention.team + "-player-" + intention.player + "-ft-missed";
+		id = localStorage.getItem("team") + "-player-" + localStorage.getItem("player") + "-ftpct";
+		idmade = localStorage.getItem("team") + "-player-" + localStorage.getItem("player") + "-ft-made";
+		idmissed = localStorage.getItem("team") + "-player-" + localStorage.getItem("player") + "-ft-missed";
 		if(localStorage.getItem(idmissed) == null)
 		{
 			localStorage.setItem(idmissed, 1);
@@ -834,7 +915,7 @@ function score(type)
 	}
 	else if(type == "reb")
 	{
-		id = intention.team + "-player-" + intention.player + "-reb";
+		id = localStorage.getItem("team") + "-player-" + localStorage.getItem("player") + "-reb";
 		if(localStorage.getItem(id) == null)
 		{
 			localStorage.setItem(id, 1);
@@ -846,7 +927,7 @@ function score(type)
 	}
 	else if(type == "ast")
 	{
-		id = intention.team + "-player-" + intention.player + "-ast";
+		id = localStorage.getItem("team") + "-player-" + localStorage.getItem("player") + "-ast";
 		if(localStorage.getItem(id) == null)
 		{
 			localStorage.setItem(id, 1);
@@ -858,7 +939,7 @@ function score(type)
 	}
 	else if(type == "stl")
 	{
-		id = intention.team + "-player-" + intention.player + "-stl";
+		id = localStorage.getItem("team") + "-player-" + localStorage.getItem("player") + "-stl";
 		if(localStorage.getItem(id) == null)
 		{
 			localStorage.setItem(id, 1);
@@ -870,7 +951,7 @@ function score(type)
 	}
 	else if(type == "to")
 	{
-		id = intention.team + "-player-" + intention.player + "-to";
+		id = localStorage.getItem("team") + "-player-" + localStorage.getItem("player") + "-to";
 		if(localStorage.getItem(id) == null)
 		{
 			localStorage.setItem(id, 1);
@@ -880,10 +961,10 @@ function score(type)
 			localStorage.setItem(id, parseInt(localStorage.getItem(id)) + 1);
 		}
 	}
-	id = intention.team + "-player-" + intention.player + "-pts";
-	idfg = intention.team + "-player-" + intention.player + "-fg-made";
-	id3pt = intention.team + "-player-" + intention.player + "-3pt-made";
-	idft = intention.team + "-player-" + intention.player + "-ft-made";
+	id = localStorage.getItem("team") + "-player-" + localStorage.getItem("player") + "-pts";
+	idfg = localStorage.getItem("team") + "-player-" + localStorage.getItem("player") + "-fg-made";
+	id3pt = localStorage.getItem("team") + "-player-" + localStorage.getItem("player") + "-3pt-made";
+	idft = localStorage.getItem("team") + "-player-" + localStorage.getItem("player") + "-ft-made";
 	if(localStorage.getItem(idft) == null && localStorage.getItem(id3pt) == null)
 		tempPts = (parseInt(localStorage.getItem(idfg)) * 2) + 0 + 0;
 	else if(localStorage.getItem(idfg) == null && localStorage.getItem(id3pt) == null)
@@ -903,6 +984,7 @@ function score(type)
 		tempPts = (parseInt(localStorage.getItem(idfg)) * 2) + (parseInt(localStorage.getItem(id3pt)) * 3) + parseInt(localStorage.getItem(idft));
 	console.log(parseInt(localStorage.getItem(id3pt)));
 	localStorage.setItem(id, tempPts);
+	window.location.href="main.html";
 
 }
 function addHidden(last)
