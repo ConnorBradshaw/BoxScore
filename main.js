@@ -233,7 +233,7 @@ function resetBox()
 	localStorage.setItem("away", "Away Team");
 	localStorage.setItem("away-box", "Away Team");
 	console.log(localStorage.getItem("home-points"));
-	window.location.href="main.html";
+	window.location.href="index.html";
 }
 function editNames(path)
 {
@@ -1077,6 +1077,7 @@ function submit()
 		localStorage.setItem(id, document.getElementById("name-text").value);
 		document.getElementById(id).textContent = document.getElementById("name-text").value;
 		document.getElementById("name-text").value = "";
+		window.location.href="index.html";
 	}
 function score(type)
 {
@@ -1380,7 +1381,7 @@ function score(type)
 		tempPts = (parseInt(localStorage.getItem(idfg)) * 2) + (parseInt(localStorage.getItem(id3pt)) * 3) + parseInt(localStorage.getItem(idft));
 	console.log(parseInt(localStorage.getItem(id3pt)));
 	localStorage.setItem(id, tempPts);
-	window.location.href="main.html";
+	window.location.href="index.html";
 
 }
 function addHidden(last)

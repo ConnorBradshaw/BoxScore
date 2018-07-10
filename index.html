@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+<header>
+	<title>Box Score</title>
+</header>
+<head>
+	<link rel="stylesheet" href="main.css">
+	<script src="main.js"></script>
+</head>
+<body onload="refreshBox()">
+	<div class="page-wrap">
+
+		<div class="top">
+			<a href="edit.html" class="edit-game">Edit Game</a>
+			<div class="header-score-container">
+			<div class="home-team">
+				<img class="team-picture home-logo" src=bulls.png alt=bulls>
+				<div class="name-container">
+				<span id="home" class="home-name">Home Team</span>
+				</div>
+				<div class="score-container">
+				<span id="home-points" class="home-score">0</span>
+				</div>
+			</div>
+			<div class="away-team">
+				<div class="score-container">
+				<span id="away-points" class="away-score">0</span>
+				</div>
+				<div class="name-container">
+				<span id="away" class="away-name">Away Team</span>
+				<img class="team-picture away-logo" src=spurs.png alt=spurs>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<div class="center">
+			<div class="box-score-container">
+			<table class="box-score-home">
+				<tr class="box-header">
+
+					<th id="home-box" class="team-name home">Home Team</th>
+				
+				<tr>
+					<th>Name</th>
+					<th>FG</th>
+					<th>3PT</th>
+					<th>FT</th>
+					<th>REB</th>
+					<th>AST</th>
+					<th>STL</th>
+					<th>TO</th>
+					<th>PTS</th>
+				</tr>
+				<tr class="r1">
+					<td ><a  id="home-player-1" href="score.html" onclick="return editHomePlayer1()">Player 1</a></td>
+					<td id="home-player-1-fgpct"></td>
+					<td id="home-player-1-3ptpct"></td>
+					<td id="home-player-1-ftpct"></td>
+					<td id="home-player-1-reb"></td>
+					<td id="home-player-1-ast"></td>
+					<td id="home-player-1-stl"></td>
+					<td id="home-player-1-to"></td>
+					<td id="home-player-1-pts"></td>
+				</tr>
+				<tr class="r2">
+					<td><a id="home-player-2" href="score.html" onclick="return editHomePlayer2()">Player 2</a></td>
+					<td id="home-player-2-fgpct"></td>
+					<td id="home-player-2-3ptpct"></td>
+					<td id="home-player-2-ftpct"></td>
+					<td id="home-player-2-reb"></td>
+					<td id="home-player-2-ast"></td>
+					<td id="home-player-2-stl"></td>
+					<td id="home-player-2-to"></td>
+					<td id="home-player-2-pts"></td>
+				</tr>
+				<tr class="r3">
+					<td><a id="home-player-3" href="score.html" onclick="return editHomePlayer3()">Player 3</a></td>
+					<td id="home-player-3-fgpct"></td>
+					<td id="home-player-3-3ptpct"></td>
+					<td id="home-player-3-ftpct"></td>
+					<td id="home-player-3-reb"></td>
+					<td id="home-player-3-ast"></td>
+					<td id="home-player-3-stl"></td>
+					<td id="home-player-3-to"></td>
+					<td id="home-player-3-pts"></td>
+				</tr>
+				<tr class="r4">
+					<td><a id="home-player-4" href="score.html" onclick="return editHomePlayer4()">Player 4</a></td>
+					<td id="home-player-4-fgpct"></td>
+					<td id="home-player-4-3ptpct"></td>
+					<td id="home-player-4-ftpct"></td>
+					<td id="home-player-4-reb"></td>
+					<td id="home-player-4-ast"></td>
+					<td id="home-player-4-stl"></td>
+					<td id="home-player-4-to"></td>
+					<td id="home-player-4-pts"></td>
+				</tr>
+				<tr class="r5">
+					<td><a id="home-player-5" href="score.html" onclick="return editHomePlayer5()">Player 5</a></td>
+					<td id="home-player-5-fgpct"></td>
+					<td id="home-player-5-3ptpct"></td>
+					<td id="home-player-5-ftpct"></td>
+					<td id="home-player-5-reb"></td>
+					<td id="home-player-5-ast"></td>
+					<td id="home-player-5-stl"></td>
+					<td id="home-player-5-to"></td>
+					<td id="home-player-5-pts"></td>
+				</tr>
+				<tr class="r6">
+					<td><a id="home-player-6" href="score.html" onclick="return editHomePlayer6()">Player 6</a></td>
+					<td id="home-player-6-fgpct"></td>
+					<td id="home-player-6-3ptpct"></td>
+					<td id="home-player-6-ftpct"></td>
+					<td id="home-player-6-reb"></td>
+					<td id="home-player-6-ast"></td>
+					<td id="home-player-6-stl"></td>
+					<td id="home-player-6-to"></td>
+					<td id="home-player-6-pts"></td>
+				</tr>
+				<tr class="r7">
+					<td><a id="home-player-7" href="score.html" onclick="return editHomePlayer7()">Player 7</a></td>
+					<td id="home-player-7-fgpct"></td>
+					<td id="home-player-7-3ptpct"></td>
+					<td id="home-player-7-ftpct"></td>
+					<td id="home-player-7-reb"></td>
+					<td id="home-player-7-ast"></td>
+					<td id="home-player-7-stl"></td>
+					<td id="home-player-7-to"></td>
+					<td id="home-player-7-pts"></td>
+				</tr>
+				<tr class="r8">
+					<td><a id="home-player-8" href="score.html" onclick="return editHomePlayer8()">Player 8</a></td>
+					<td id="home-player-8-fgpct"></td>
+					<td id="home-player-8-3ptpct"></td>
+					<td id="home-player-8-ftpct"></td>
+					<td id="home-player-8-reb"></td>
+					<td id="home-player-8-ast"></td>
+					<td id="home-player-8-stl"></td>
+					<td id="home-player-8-to"></td>
+					<td id="home-player-8-pts"></td>
+				</tr>
+			</table>
+			<table class="box-score-away">
+				<tr class="box-header">
+					<th id="away-box" class="team-name away">Away Team</th>
+				
+				<tr>
+					<th>Name</th>
+					<th>FG</th>
+					<th>3PT</th>
+					<th>FT</th>
+					<th>REB</th>
+					<th>AST</th>
+					<th>STL</th>
+					<th>TO</th>
+					<th>PTS</th>
+				</tr>
+				<tr class="r1">
+					<td><a id="away-player-1" href="score.html" onclick="return editAwayPlayer1()">Player 1</a></td>
+					<td id="away-player-1-fgpct"></td>
+					<td id="away-player-1-3ptpct"></td>
+					<td id="away-player-1-ftpct"></td>
+					<td id="away-player-1-reb"></td>
+					<td id="away-player-1-ast"></td>
+					<td id="away-player-1-stl"></td>
+					<td id="away-player-1-to"></td>
+					<td id="away-player-1-pts"></td>
+				</tr>
+				<tr class="r2">
+					<td><a id="away-player-2" href="score.html" onclick="return editAwayPlayer2()">Player 2</a></td>
+					<td id="away-player-2-fgpct"></td>
+					<td id="away-player-2-3ptpct"></td>
+					<td id="away-player-2-ftpct"></td>
+					<td id="away-player-2-reb"></td>
+					<td id="away-player-2-ast"></td>
+					<td id="away-player-2-stl"></td>
+					<td id="away-player-2-to"></td>
+					<td id="away-player-2-pts"></td>
+				</tr>
+				<tr class="r3">
+					<td><a id="away-player-3" href="score.html" onclick="return editAwayPlayer3()">Player 3</a></td>
+					<td id="away-player-3-fgpct"></td>
+					<td id="away-player-3-3ptpct"></td>
+					<td id="away-player-3-ftpct"></td>
+					<td id="away-player-3-reb"></td>
+					<td id="away-player-3-ast"></td>
+					<td id="away-player-3-stl"></td>
+					<td id="away-player-3-to"></td>
+					<td id="away-player-3-pts"></td>
+				</tr>
+				<tr class="r4">
+					<td><a id="away-player-4" href="score.html" onclick="return editAwayPlayer4()">Player 4</a></td>
+					<td id="away-player-4-fgpct"></td>
+					<td id="away-player-4-3ptpct"></td>
+					<td id="away-player-4-ftpct"></td>
+					<td id="away-player-4-reb"></td>
+					<td id="away-player-4-ast"></td>
+					<td id="away-player-4-stl"></td>
+					<td id="away-player-4-to"></td>
+					<td id="away-player-4-pts"></td>
+				</tr>
+				<tr class="r5">
+					<td><a id="away-player-5" href="score.html" onclick="return editAwayPlayer5()">Player 5</a></td>
+					<td id="away-player-5-fgpct"></td>
+					<td id="away-player-5-3ptpct"></td>
+					<td id="away-player-5-ftpct"></td>
+					<td id="away-player-5-reb"></td>
+					<td id="away-player-5-ast"></td>
+					<td id="away-player-5-stl"></td>
+					<td id="away-player-5-to"></td>
+					<td id="away-player-5-pts"></td>
+				</tr>
+				<tr class="r6">
+					<td><a id="away-player-6" href="score.html" onclick="return editAwayPlayer6()">Player 6</a></td>
+					<td id="away-player-6-fgpct"></td>
+					<td id="away-player-6-3ptpct"></td>
+					<td id="away-player-6-ftpct"></td>
+					<td id="away-player-6-reb"></td>
+					<td id="away-player-6-ast"></td>
+					<td id="away-player-6-stl"></td>
+					<td id="away-player-6-to"></td>
+					<td id="away-player-6-pts"></td>
+				</tr>
+				<tr class="r7">
+					<td><a id="away-player-7" href="score.html" onclick="return editAwayPlayer7()">Player 7</a></td>
+					<td id="away-player-7-fgpct"></td>
+					<td id="away-player-7-3ptpct"></td>
+					<td id="away-player-7-ftpct"></td>
+					<td id="away-player-7-reb"></td>
+					<td id="away-player-7-ast"></td>
+					<td id="away-player-7-stl"></td>
+					<td id="away-player-7-to"></td>
+					<td id="away-player-7-pts"></td>
+				</tr>
+				<tr class="r8">
+					<td><a id="away-player-8" href="score.html" onclick="return editAwayPlayer8()">Player 8</a></td>
+					<td id="away-player-8-fgpct"></td>
+					<td id="away-player-8-3ptpct"></td>
+					<td id="away-player-8-ftpct"></td>
+					<td id="away-player-8-reb"></td>
+					<td id="away-player-8-ast"></td>
+					<td id="away-player-8-stl"></td>
+					<td id="away-player-8-to"></td>
+					<td id="away-player-8-pts"></td>
+				</tr>
+			</table>
+			</div>
+		</div>
+</body>
+
+
+</html>
