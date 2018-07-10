@@ -91,7 +91,15 @@ tr: nth-child(even)
 	font-size: 40px;
 	text-align: left;
 }
+.r2
+{
+	background: #F0F0F0;
+}
+.r4, .r6, .r8
+{
+	background: #F0F0F0;
 
+}
 .header-score-container
 {
 	border-top: 1px solid #E8E8E8;
