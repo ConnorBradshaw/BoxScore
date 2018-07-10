@@ -3,6 +3,20 @@ var intention = {};
 var boxStats = {};
 menuCollection.lastMenu = "mainMenu";
 menuCollection.currentMenu = "mainMenu";
+localStorage.setItem("home-player-1","Player 1");
+localStorage.setItem("home-player-2", "Player 2");
+localStorage.setItem("home-player-3", " Player 3");
+localStorage.setItem("home-player-4", "Player 4");
+localStorage.setItem("home-player-5", "Player 5");
+localStorage.setItem("away-player-1", "Player 1");
+localStorage.setItem("away-player-2", "Player 2");
+localStorage.setItem("away-player-3", "Player 3");
+localStorage.setItem("away-player-4", "Player 4");
+localStorage.setItem("away-player-5", "Player 5");
+localStorage.setItem("home", "Home Team");
+localStorage.setItem("home-box", "Home Team");
+localStorage.setItem("away", "Away Team");
+localStorage.setItem("away-box", "Away Team");
 function refreshEdit()
 {
 	document.getElementById("home-player-1").textContent = localStorage.getItem("home-player-1");
@@ -672,11 +686,11 @@ function submit()
 		var id;
 		if(intention.path == "editPlayer")
 		{
-			id = intention.team + "-player-" + intention.player;
+			id = localStorage.getItem("team") + "-player-" + localStorage.getItem("player");
 		}
 		else if(intention.path == "editTeam")
 		{
-			id = intention.team;
+			id = localStorage.getItem("team");
 		} 
 		localStorage.setItem(id, document.getElementById("name-text").value);
 		document.getElementById(id).textContent = document.getElementById("name-text").value;
