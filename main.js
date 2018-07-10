@@ -10,11 +10,17 @@ if(localStorage.getItem("home-player-1") == null)
 	localStorage.setItem("home-player-3", " Player 3");
 	localStorage.setItem("home-player-4", "Player 4");
 	localStorage.setItem("home-player-5", "Player 5");
+	localStorage.setItem("home-player-6", "Player 6");
+	localStorage.setItem("home-player-7", "Player 7");
+	localStorage.setItem("home-player-8", "Player 8");
 	localStorage.setItem("away-player-1", "Player 1");
 	localStorage.setItem("away-player-2", "Player 2");
 	localStorage.setItem("away-player-3", "Player 3");
 	localStorage.setItem("away-player-4", "Player 4");
 	localStorage.setItem("away-player-5", "Player 5");
+	localStorage.setItem("away-player-6", "Player 6");
+	localStorage.setItem("away-player-7", "Player 7");
+	localStorage.setItem("away-player-8", "Player 8");
 	localStorage.setItem("home", "Home Team");
 	localStorage.setItem("home-box", "Home Team");
 	localStorage.setItem("away", "Away Team");
@@ -28,11 +34,17 @@ function refreshEdit()
 	document.getElementById("home-player-3").textContent = localStorage.getItem("home-player-3");
 	document.getElementById("home-player-4").textContent = localStorage.getItem("home-player-4");
 	document.getElementById("home-player-5").textContent = localStorage.getItem("home-player-5");
+	document.getElementById("home-player-6").textContent = localStorage.getItem("home-player-6");
+	document.getElementById("home-player-7").textContent = localStorage.getItem("home-player-7");
+	document.getElementById("home-player-8").textContent = localStorage.getItem("home-player-8");
 	document.getElementById("away-player-1").textContent = localStorage.getItem("away-player-1");
 	document.getElementById("away-player-2").textContent = localStorage.getItem("away-player-2");
 	document.getElementById("away-player-3").textContent = localStorage.getItem("away-player-3");
 	document.getElementById("away-player-4").textContent = localStorage.getItem("away-player-4");
 	document.getElementById("away-player-5").textContent = localStorage.getItem("away-player-5");
+	document.getElementById("away-player-6").textContent = localStorage.getItem("away-player-6");
+	document.getElementById("away-player-7").textContent = localStorage.getItem("away-player-7");
+	document.getElementById("away-player-8").textContent = localStorage.getItem("away-player-8");
 	document.getElementById("home").textContent = localStorage.getItem("home");
 	document.getElementById("away").textContent = localStorage.getItem("away");
 }
@@ -83,6 +95,33 @@ function refreshBox()
 	document.getElementById("home-player-5-stl").textContent = localStorage.getItem("home-player-5-stl");
 	document.getElementById("home-player-5-to").textContent = localStorage.getItem("home-player-5-to");
 	document.getElementById("home-player-5-pts").textContent = localStorage.getItem("home-player-5-pts");
+	document.getElementById("home-player-6").textContent = localStorage.getItem("home-player-6");
+	document.getElementById("home-player-6-fgpct").textContent = localStorage.getItem("home-player-6-fgpct");
+	document.getElementById("home-player-6-3ptpct").textContent = localStorage.getItem("home-player-6-3ptpct");
+	document.getElementById("home-player-6-ftpct").textContent = localStorage.getItem("home-player-6-ftpct");
+	document.getElementById("home-player-6-reb").textContent = localStorage.getItem("home-player-6-reb");
+	document.getElementById("home-player-6-ast").textContent = localStorage.getItem("home-player-6-ast");
+	document.getElementById("home-player-6-stl").textContent = localStorage.getItem("home-player-6-stl");
+	document.getElementById("home-player-6-to").textContent = localStorage.getItem("home-player-6-to");
+	document.getElementById("home-player-6-pts").textContent = localStorage.getItem("home-player-6-pts");
+	document.getElementById("home-player-7").textContent = localStorage.getItem("home-player-7");
+	document.getElementById("home-player-7-fgpct").textContent = localStorage.getItem("home-player-7-fgpct");
+	document.getElementById("home-player-7-3ptpct").textContent = localStorage.getItem("home-player-7-3ptpct");
+	document.getElementById("home-player-7-ftpct").textContent = localStorage.getItem("home-player-7-ftpct");
+	document.getElementById("home-player-7-reb").textContent = localStorage.getItem("home-player-7-reb");
+	document.getElementById("home-player-7-ast").textContent = localStorage.getItem("home-player-7-ast");
+	document.getElementById("home-player-7-stl").textContent = localStorage.getItem("home-player-7-stl");
+	document.getElementById("home-player-7-to").textContent = localStorage.getItem("home-player-7-to");
+	document.getElementById("home-player-7-pts").textContent = localStorage.getItem("home-player-7-pts");
+	document.getElementById("home-player-8").textContent = localStorage.getItem("home-player-8");
+	document.getElementById("home-player-8-fgpct").textContent = localStorage.getItem("home-player-8-fgpct");
+	document.getElementById("home-player-8-3ptpct").textContent = localStorage.getItem("home-player-8-3ptpct");
+	document.getElementById("home-player-8-ftpct").textContent = localStorage.getItem("home-player-8-ftpct");
+	document.getElementById("home-player-8-reb").textContent = localStorage.getItem("home-player-8-reb");
+	document.getElementById("home-player-8-ast").textContent = localStorage.getItem("home-player-8-ast");
+	document.getElementById("home-player-8-stl").textContent = localStorage.getItem("home-player-8-stl");
+	document.getElementById("home-player-8-to").textContent = localStorage.getItem("home-player-8-to");
+	document.getElementById("home-player-8-pts").textContent = localStorage.getItem("home-player-8-pts");
 	document.getElementById("away-player-1").textContent = localStorage.getItem("away-player-1");
 	document.getElementById("away-player-1-fgpct").textContent = localStorage.getItem("away-player-1-fgpct");
 	document.getElementById("away-player-1-3ptpct").textContent = localStorage.getItem("away-player-1-3ptpct");
@@ -128,6 +167,33 @@ function refreshBox()
 	document.getElementById("away-player-5-stl").textContent = localStorage.getItem("away-player-5-stl");
 	document.getElementById("away-player-5-to").textContent = localStorage.getItem("away-player-5-to");
 	document.getElementById("away-player-5-pts").textContent = localStorage.getItem("away-player-5-pts");
+	document.getElementById("away-player-6").textContent = localStorage.getItem("away-player-6");
+	document.getElementById("away-player-6-fgpct").textContent = localStorage.getItem("away-player-6-fgpct");
+	document.getElementById("away-player-6-3ptpct").textContent = localStorage.getItem("away-player-6-3ptpct");
+	document.getElementById("away-player-6-ftpct").textContent = localStorage.getItem("away-player-6-ftpct");
+	document.getElementById("away-player-6-reb").textContent = localStorage.getItem("away-player-6-reb");
+	document.getElementById("away-player-6-ast").textContent = localStorage.getItem("away-player-6-ast");
+	document.getElementById("away-player-6-stl").textContent = localStorage.getItem("away-player-6-stl");
+	document.getElementById("away-player-6-to").textContent = localStorage.getItem("away-player-6-to");
+	document.getElementById("away-player-6-pts").textContent = localStorage.getItem("away-player-6-pts");
+	document.getElementById("away-player-7").textContent = localStorage.getItem("away-player-7");
+	document.getElementById("away-player-7-fgpct").textContent = localStorage.getItem("away-player-7-fgpct");
+	document.getElementById("away-player-7-3ptpct").textContent = localStorage.getItem("away-player-7-3ptpct");
+	document.getElementById("away-player-7-ftpct").textContent = localStorage.getItem("away-player-7-ftpct");
+	document.getElementById("away-player-7-reb").textContent = localStorage.getItem("away-player-7-reb");
+	document.getElementById("away-player-7-ast").textContent = localStorage.getItem("away-player-7-ast");
+	document.getElementById("away-player-7-stl").textContent = localStorage.getItem("away-player-7-stl");
+	document.getElementById("away-player-7-to").textContent = localStorage.getItem("away-player-7-to");
+	document.getElementById("away-player-7-pts").textContent = localStorage.getItem("away-player-7-pts");
+	document.getElementById("away-player-8").textContent = localStorage.getItem("away-player-8");
+	document.getElementById("away-player-8-fgpct").textContent = localStorage.getItem("away-player-8-fgpct");
+	document.getElementById("away-player-8-3ptpct").textContent = localStorage.getItem("away-player-8-3ptpct");
+	document.getElementById("away-player-8-ftpct").textContent = localStorage.getItem("away-player-8-ftpct");
+	document.getElementById("away-player-8-reb").textContent = localStorage.getItem("away-player-8-reb");
+	document.getElementById("away-player-8-ast").textContent = localStorage.getItem("away-player-8-ast");
+	document.getElementById("away-player-8-stl").textContent = localStorage.getItem("away-player-8-stl");
+	document.getElementById("away-player-8-to").textContent = localStorage.getItem("away-player-8-to");
+	document.getElementById("away-player-8-pts").textContent = localStorage.getItem("away-player-8-pts");
 	document.getElementById("home").textContent = localStorage.getItem("home");
 	document.getElementById("away").textContent = localStorage.getItem("away");
 	document.getElementById("home-box").textContent = localStorage.getItem("home");
@@ -151,11 +217,17 @@ function resetBox()
 	localStorage.setItem("home-player-3", " Player 3");
 	localStorage.setItem("home-player-4", "Player 4");
 	localStorage.setItem("home-player-5", "Player 5");
+	localStorage.setItem("home-player-6", "Player 6");
+	localStorage.setItem("home-player-7", "Player 7");
+	localStorage.setItem("home-player-8", "Player 8");
 	localStorage.setItem("away-player-1", "Player 1");
 	localStorage.setItem("away-player-2", "Player 2");
 	localStorage.setItem("away-player-3", "Player 3");
 	localStorage.setItem("away-player-4", "Player 4");
 	localStorage.setItem("away-player-5", "Player 5");
+	localStorage.setItem("away-player-6", "Player 6");
+	localStorage.setItem("away-player-7", "Player 7");
+	localStorage.setItem("away-player-8", "Player 8");
 	localStorage.setItem("home", "Home Team");
 	localStorage.setItem("home-box", "Home Team");
 	localStorage.setItem("away", "Away Team");
@@ -190,6 +262,9 @@ function editAwayPlayer1()
 	document.getElementById("away-player-3").classList.add("hidden");
 	document.getElementById("away-player-4").classList.add("hidden");
 	document.getElementById("away-player-5").classList.add("hidden");
+	document.getElementById("away-player-6").classList.add("hidden");
+	document.getElementById("away-player-7").classList.add("hidden");
+	document.getElementById("away-player-8").classList.add("hidden");
 	if(intention.path == "editPlayer")
 	{
 		document.getElementById("name-submittal").classList.remove("hidden");
@@ -230,6 +305,9 @@ function editAwayPlayer2()
 	document.getElementById("away-player-3").classList.add("hidden");
 	document.getElementById("away-player-4").classList.add("hidden");
 	document.getElementById("away-player-5").classList.add("hidden");
+	document.getElementById("away-player-6").classList.add("hidden");
+	document.getElementById("away-player-7").classList.add("hidden");
+	document.getElementById("away-player-8").classList.add("hidden");
 	if(intention.path == "editPlayer")
 	{
 		document.getElementById("name-submittal").classList.remove("hidden");
@@ -271,6 +349,9 @@ function editAwayPlayer3()
 	document.getElementById("away-player-3").classList.add("hidden");
 	document.getElementById("away-player-4").classList.add("hidden");
 	document.getElementById("away-player-5").classList.add("hidden");
+	document.getElementById("away-player-6").classList.add("hidden");
+	document.getElementById("away-player-7").classList.add("hidden");
+	document.getElementById("away-player-8").classList.add("hidden");
 	if(intention.path == "editPlayer")
 	{
 		document.getElementById("name-submittal").classList.remove("hidden");
@@ -312,6 +393,9 @@ function editAwayPlayer4()
 	document.getElementById("away-player-3").classList.add("hidden");
 	document.getElementById("away-player-4").classList.add("hidden");
 	document.getElementById("away-player-5").classList.add("hidden");
+	document.getElementById("away-player-6").classList.add("hidden");
+	document.getElementById("away-player-7").classList.add("hidden");
+	document.getElementById("away-player-8").classList.add("hidden");
 	if(intention.path == "editPlayer")
 	{
 		document.getElementById("name-submittal").classList.remove("hidden");
@@ -353,6 +437,9 @@ function editAwayPlayer5()
 	document.getElementById("away-player-3").classList.add("hidden");
 	document.getElementById("away-player-4").classList.add("hidden");
 	document.getElementById("away-player-5").classList.add("hidden");
+	document.getElementById("away-player-6").classList.add("hidden");
+	document.getElementById("away-player-7").classList.add("hidden");
+	document.getElementById("away-player-8").classList.add("hidden");
 	if(intention.path == "editPlayer")
 	{
 		document.getElementById("name-submittal").classList.remove("hidden");
@@ -386,6 +473,138 @@ function editAwayPlayer5()
 	else if(intention.path == "score")
 		menuCollection.currentMenu = "boxScore";
 }
+function editAwayPlayer6()
+{
+	console.log(intention.path);
+	document.getElementById("away-player-1").classList.add("hidden");
+	document.getElementById("away-player-2").classList.add("hidden");
+	document.getElementById("away-player-3").classList.add("hidden");
+	document.getElementById("away-player-4").classList.add("hidden");
+	document.getElementById("away-player-5").classList.add("hidden");
+	document.getElementById("away-player-6").classList.add("hidden");
+	document.getElementById("away-player-7").classList.add("hidden");
+	document.getElementById("away-player-8").classList.add("hidden");
+	if(intention.path == "editPlayer")
+	{
+		document.getElementById("name-submittal").classList.remove("hidden");
+		localStorage.setItem("player", "6");
+	}
+	else if(intention.path == "score")
+	{
+		document.getElementById("fg-made").classList.remove("hidden");
+		document.getElementById("3pt-made").classList.remove("hidden");
+		document.getElementById("ft-made").classList.remove("hidden");
+		document.getElementById("fg-missed").classList.remove("hidden");
+		document.getElementById("3pt-missed").classList.remove("hidden");
+		document.getElementById("ft-missed").classList.remove("hidden");
+		document.getElementById("reb").classList.remove("hidden");
+		document.getElementById("ast").classList.remove("hidden");
+		document.getElementById("stl").classList.remove("hidden");
+		document.getElementById("to").classList.remove("hidden");
+		localStorage.setItem("player", "6");
+	}
+	else
+	{
+
+		console.log("hi");
+		localStorage.setItem("player", "6");
+		localStorage.setItem("team", "away");
+		return true;
+	}
+	menuCollection.lastMenu = menuCollection.currentMenu;
+	if(intention.path == "editPlayer")
+		menuCollection.currentMenu = "nameEditText";
+	else if(intention.path == "score")
+		menuCollection.currentMenu = "boxScore";
+}
+function editAwayPlayer7()
+{
+	console.log(intention.path);
+	document.getElementById("away-player-1").classList.add("hidden");
+	document.getElementById("away-player-2").classList.add("hidden");
+	document.getElementById("away-player-3").classList.add("hidden");
+	document.getElementById("away-player-4").classList.add("hidden");
+	document.getElementById("away-player-5").classList.add("hidden");
+	document.getElementById("away-player-6").classList.add("hidden");
+	document.getElementById("away-player-7").classList.add("hidden");
+	document.getElementById("away-player-8").classList.add("hidden");
+	if(intention.path == "editPlayer")
+	{
+		document.getElementById("name-submittal").classList.remove("hidden");
+		localStorage.setItem("player", "7");
+	}
+	else if(intention.path == "score")
+	{
+		document.getElementById("fg-made").classList.remove("hidden");
+		document.getElementById("3pt-made").classList.remove("hidden");
+		document.getElementById("ft-made").classList.remove("hidden");
+		document.getElementById("fg-missed").classList.remove("hidden");
+		document.getElementById("3pt-missed").classList.remove("hidden");
+		document.getElementById("ft-missed").classList.remove("hidden");
+		document.getElementById("reb").classList.remove("hidden");
+		document.getElementById("ast").classList.remove("hidden");
+		document.getElementById("stl").classList.remove("hidden");
+		document.getElementById("to").classList.remove("hidden");
+		localStorage.setItem("player", "7");
+	}
+	else
+	{
+
+		console.log("hi");
+		localStorage.setItem("player", "7");
+		localStorage.setItem("team", "away");
+		return true;
+	}
+	menuCollection.lastMenu = menuCollection.currentMenu;
+	if(intention.path == "editPlayer")
+		menuCollection.currentMenu = "nameEditText";
+	else if(intention.path == "score")
+		menuCollection.currentMenu = "boxScore";
+}
+function editAwayPlayer8()
+{
+	console.log(intention.path);
+	document.getElementById("away-player-1").classList.add("hidden");
+	document.getElementById("away-player-2").classList.add("hidden");
+	document.getElementById("away-player-3").classList.add("hidden");
+	document.getElementById("away-player-4").classList.add("hidden");
+	document.getElementById("away-player-5").classList.add("hidden");
+	document.getElementById("away-player-6").classList.add("hidden");
+	document.getElementById("away-player-7").classList.add("hidden");
+	document.getElementById("away-player-8").classList.add("hidden");
+	if(intention.path == "editPlayer")
+	{
+		document.getElementById("name-submittal").classList.remove("hidden");
+		localStorage.setItem("player", "8");
+	}
+	else if(intention.path == "score")
+	{
+		document.getElementById("fg-made").classList.remove("hidden");
+		document.getElementById("3pt-made").classList.remove("hidden");
+		document.getElementById("ft-made").classList.remove("hidden");
+		document.getElementById("fg-missed").classList.remove("hidden");
+		document.getElementById("3pt-missed").classList.remove("hidden");
+		document.getElementById("ft-missed").classList.remove("hidden");
+		document.getElementById("reb").classList.remove("hidden");
+		document.getElementById("ast").classList.remove("hidden");
+		document.getElementById("stl").classList.remove("hidden");
+		document.getElementById("to").classList.remove("hidden");
+		localStorage.setItem("player", "8");
+	}
+	else
+	{
+
+		console.log("hi");
+		localStorage.setItem("player", "8");
+		localStorage.setItem("team", "away");
+		return true;
+	}
+	menuCollection.lastMenu = menuCollection.currentMenu;
+	if(intention.path == "editPlayer")
+		menuCollection.currentMenu = "nameEditText";
+	else if(intention.path == "score")
+		menuCollection.currentMenu = "boxScore";
+}
 function editHomePlayer1()
 {
 	console.log(intention.path);
@@ -394,6 +613,9 @@ function editHomePlayer1()
 	document.getElementById("home-player-3").classList.add("hidden");
 	document.getElementById("home-player-4").classList.add("hidden");
 	document.getElementById("home-player-5").classList.add("hidden");
+	document.getElementById("home-player-6").classList.add("hidden");
+	document.getElementById("home-player-7").classList.add("hidden");
+	document.getElementById("home-player-8").classList.add("hidden");
 	if(intention.path == "editPlayer")
 	{
 		console.log("hi");
@@ -435,6 +657,9 @@ function editHomePlayer2()
 	document.getElementById("home-player-3").classList.add("hidden");
 	document.getElementById("home-player-4").classList.add("hidden");
 	document.getElementById("home-player-5").classList.add("hidden");
+	document.getElementById("home-player-6").classList.add("hidden");
+	document.getElementById("home-player-7").classList.add("hidden");
+	document.getElementById("home-player-8").classList.add("hidden");
 	if(intention.path == "editPlayer")
 	{
 		console.log("hi");
@@ -476,6 +701,9 @@ function editHomePlayer3()
 	document.getElementById("home-player-3").classList.add("hidden");
 	document.getElementById("home-player-4").classList.add("hidden");
 	document.getElementById("home-player-5").classList.add("hidden");
+	document.getElementById("home-player-6").classList.add("hidden");
+	document.getElementById("home-player-7").classList.add("hidden");
+	document.getElementById("home-player-8").classList.add("hidden");
 	if(intention.path == "editPlayer")
 	{
 		console.log("hi");
@@ -517,6 +745,9 @@ function editHomePlayer4()
 	document.getElementById("home-player-3").classList.add("hidden");
 	document.getElementById("home-player-4").classList.add("hidden");
 	document.getElementById("home-player-5").classList.add("hidden");
+	document.getElementById("home-player-6").classList.add("hidden");
+	document.getElementById("home-player-7").classList.add("hidden");
+	document.getElementById("home-player-8").classList.add("hidden");
 	if(intention.path == "editPlayer")
 	{
 		console.log("hi");
@@ -558,6 +789,9 @@ function editHomePlayer5()
 	document.getElementById("home-player-3").classList.add("hidden");
 	document.getElementById("home-player-4").classList.add("hidden");
 	document.getElementById("home-player-5").classList.add("hidden");
+	document.getElementById("home-player-6").classList.add("hidden");
+	document.getElementById("home-player-7").classList.add("hidden");
+	document.getElementById("home-player-8").classList.add("hidden");
 	if(intention.path == "editPlayer")
 	{
 		console.log("hi");
@@ -592,6 +826,138 @@ function editHomePlayer5()
 	else if(intention.path == "score")
 		menuCollection.currentMenu = "boxScore";
 }
+function editHomePlayer6()
+{
+	document.getElementById("home-player-1").classList.add("hidden");
+	document.getElementById("home-player-2").classList.add("hidden");
+	document.getElementById("home-player-3").classList.add("hidden");
+	document.getElementById("home-player-4").classList.add("hidden");
+	document.getElementById("home-player-5").classList.add("hidden");
+	document.getElementById("home-player-6").classList.add("hidden");
+	document.getElementById("home-player-7").classList.add("hidden");
+	document.getElementById("home-player-8").classList.add("hidden");
+	if(intention.path == "editPlayer")
+	{
+		console.log("hi");
+		document.getElementById("name-submittal").classList.remove("hidden");
+		localStorage.setItem("player", "6");
+	}
+	else if(intention.path == "score")
+	{
+		document.getElementById("fg-made").classList.remove("hidden");
+		document.getElementById("3pt-made").classList.remove("hidden");
+		document.getElementById("ft-made").classList.remove("hidden");
+		document.getElementById("fg-missed").classList.remove("hidden");
+		document.getElementById("3pt-missed").classList.remove("hidden");
+		document.getElementById("ft-missed").classList.remove("hidden");
+		document.getElementById("reb").classList.remove("hidden");
+		document.getElementById("ast").classList.remove("hidden");
+		document.getElementById("stl").classList.remove("hidden");
+		document.getElementById("to").classList.remove("hidden");
+		localStorage.setItem("player", "6");
+	}
+	else
+	{
+
+		console.log("hi");
+		localStorage.setItem("player", "6");
+		localStorage.setItem("team", "home");
+		return true;
+	}
+	menuCollection.lastMenu = menuCollection.currentMenu;
+	if(intention.path == "editPlayer")
+		menuCollection.currentMenu = "nameEditText";
+	else if(intention.path == "score")
+		menuCollection.currentMenu = "boxScore";
+}
+function editHomePlayer7()
+{
+	document.getElementById("home-player-1").classList.add("hidden");
+	document.getElementById("home-player-2").classList.add("hidden");
+	document.getElementById("home-player-3").classList.add("hidden");
+	document.getElementById("home-player-4").classList.add("hidden");
+	document.getElementById("home-player-5").classList.add("hidden");
+	document.getElementById("home-player-6").classList.add("hidden");
+	document.getElementById("home-player-7").classList.add("hidden");
+	document.getElementById("home-player-8").classList.add("hidden");
+	if(intention.path == "editPlayer")
+	{
+		console.log("hi");
+		document.getElementById("name-submittal").classList.remove("hidden");
+		localStorage.setItem("player", "7");
+	}
+	else if(intention.path == "score")
+	{
+		document.getElementById("fg-made").classList.remove("hidden");
+		document.getElementById("3pt-made").classList.remove("hidden");
+		document.getElementById("ft-made").classList.remove("hidden");
+		document.getElementById("fg-missed").classList.remove("hidden");
+		document.getElementById("3pt-missed").classList.remove("hidden");
+		document.getElementById("ft-missed").classList.remove("hidden");
+		document.getElementById("reb").classList.remove("hidden");
+		document.getElementById("ast").classList.remove("hidden");
+		document.getElementById("stl").classList.remove("hidden");
+		document.getElementById("to").classList.remove("hidden");
+		localStorage.setItem("player", "7");
+	}
+	else
+	{
+
+		console.log("hi");
+		localStorage.setItem("player", "7");
+		localStorage.setItem("team", "home");
+		return true;
+	}
+	menuCollection.lastMenu = menuCollection.currentMenu;
+	if(intention.path == "editPlayer")
+		menuCollection.currentMenu = "nameEditText";
+	else if(intention.path == "score")
+		menuCollection.currentMenu = "boxScore";
+}
+function editHomePlayer8()
+{
+	document.getElementById("home-player-1").classList.add("hidden");
+	document.getElementById("home-player-2").classList.add("hidden");
+	document.getElementById("home-player-3").classList.add("hidden");
+	document.getElementById("home-player-4").classList.add("hidden");
+	document.getElementById("home-player-5").classList.add("hidden");
+	document.getElementById("home-player-6").classList.add("hidden");
+	document.getElementById("home-player-7").classList.add("hidden");
+	document.getElementById("home-player-8").classList.add("hidden");
+	if(intention.path == "editPlayer")
+	{
+		console.log("hi");
+		document.getElementById("name-submittal").classList.remove("hidden");
+		localStorage.setItem("player", "8");
+	}
+	else if(intention.path == "score")
+	{
+		document.getElementById("fg-made").classList.remove("hidden");
+		document.getElementById("3pt-made").classList.remove("hidden");
+		document.getElementById("ft-made").classList.remove("hidden");
+		document.getElementById("fg-missed").classList.remove("hidden");
+		document.getElementById("3pt-missed").classList.remove("hidden");
+		document.getElementById("ft-missed").classList.remove("hidden");
+		document.getElementById("reb").classList.remove("hidden");
+		document.getElementById("ast").classList.remove("hidden");
+		document.getElementById("stl").classList.remove("hidden");
+		document.getElementById("to").classList.remove("hidden");
+		localStorage.setItem("player", "8");
+	}
+	else
+	{
+
+		console.log("hi");
+		localStorage.setItem("player", "8");
+		localStorage.setItem("team", "home");
+		return true;
+	}
+	menuCollection.lastMenu = menuCollection.currentMenu;
+	if(intention.path == "editPlayer")
+		menuCollection.currentMenu = "nameEditText";
+	else if(intention.path == "score")
+		menuCollection.currentMenu = "boxScore";
+}
 function editHomePlayer()
 {
 	if(intention.path == "editPlayer" || intention.path == "score")
@@ -601,6 +967,9 @@ function editHomePlayer()
 	document.getElementById("home-player-3").classList.remove("hidden");
 	document.getElementById("home-player-4").classList.remove("hidden");
 	document.getElementById("home-player-5").classList.remove("hidden");
+	document.getElementById("home-player-6").classList.remove("hidden");
+	document.getElementById("home-player-7").classList.remove("hidden");
+	document.getElementById("home-player-8").classList.remove("hidden");
 	localStorage.setItem("team", "home");
 	}
 	else if(intention.path == "editTeam")
@@ -626,6 +995,9 @@ function editAwayPlayer()
 	document.getElementById("away-player-3").classList.remove("hidden");
 	document.getElementById("away-player-4").classList.remove("hidden");
 	document.getElementById("away-player-5").classList.remove("hidden");
+	document.getElementById("away-player-6").classList.remove("hidden");
+	document.getElementById("away-player-7").classList.remove("hidden");
+	document.getElementById("away-player-8").classList.remove("hidden");
 	localStorage.setItem("team", "away");
 	}
 	else if(intention.path == "editTeam")
@@ -662,6 +1034,9 @@ function removeHidden(last)
 		document.getElementById("away-player-3").classList.remove("hidden");
 		document.getElementById("away-player-4").classList.remove("hidden");
 		document.getElementById("away-player-5").classList.remove("hidden");
+		document.getElementById("away-player-6").classList.remove("hidden");
+		document.getElementById("away-player-7").classList.remove("hidden");
+		document.getElementById("away-player-8").classList.remove("hidden");
 	}
 	else if(last == "homePlayerSelection")
 	{
@@ -670,6 +1045,9 @@ function removeHidden(last)
 		document.getElementById("home-player-3").classList.remove("hidden");
 		document.getElementById("home-player-4").classList.remove("hidden");
 		document.getElementById("home-player-5").classList.remove("hidden");
+		document.getElementById("home-player-6").classList.remove("hidden");
+		document.getElementById("home-player-7").classList.remove("hidden");
+		document.getElementById("home-player-8").classList.remove("hidden");
 	}
 	else if(last == "boxScore")
 	{
@@ -1025,6 +1403,9 @@ function addHidden(last)
 		document.getElementById("away-player-3").classList.add("hidden");
 		document.getElementById("away-player-4").classList.add("hidden");
 		document.getElementById("away-player-5").classList.add("hidden");
+		document.getElementById("away-player-6").classList.add("hidden");
+		document.getElementById("away-player-7").classList.add("hidden");
+		document.getElementById("away-player-8").classList.add("hidden");
 	}
 	else if(last == "homePlayerSelection")
 	{
@@ -1033,6 +1414,9 @@ function addHidden(last)
 		document.getElementById("home-player-3").classList.add("hidden");
 		document.getElementById("home-player-4").classList.add("hidden");
 		document.getElementById("home-player-5").classList.add("hidden");
+		document.getElementById("home-player-6").classList.add("hidden");
+		document.getElementById("home-player-7").classList.add("hidden");
+		document.getElementById("home-player-8").classList.add("hidden");
 	}
 	else if(last == "boxScore")
 	{
