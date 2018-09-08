@@ -1,1 +1,1 @@
-This is Connor's first git project.
+Box Score Webapp for Basketball
